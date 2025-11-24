@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21-Day Transformation Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>21-DAY TRANSFORMATION</h1>
+        <p class="subtitle">War Room • Kill the Weak Version</p>
+    </header>
+
+    <!-- Progress -->
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <p id="progress-text">0% Done</p>
+
+    <!-- AI Coach -->
+    <section id="ai-panel">
+        <h2>Reminder</h2>
+        <p id="ai-output">Your transformation coach is waiting for discipline...</p>
+        <button id="ai-refresh" onclick="generateAISuggestion()">Update Insights</button>
+    </section>
+
+    <!-- Habit Input -->
+    <section>
+        <h2>Daily Habits</h2>
+
+        <div id="habit-input-box">
+            <input id="habit-input" type="text" placeholder="Write a habit...">
+            <button onclick="addHabit()">Add</button>
+        </div>
+
+        <div id="habits"></div>
+    </section>
+
+    <!-- Day Grid -->
+    <section>
+        <h2>21-Day Wall</h2>
+        <div id="days"></div>
+    </section>
+
+    <!-- Reflection -->
+    <section>
+        <h2>Daily Reflection</h2>
+        <textarea id="reflection" placeholder="Write your reflection for today..."></textarea>
+        <button onclick="saveReflection()">Save Reflection</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

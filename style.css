@@ -1,0 +1,135 @@
+body {
+    background: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #bbb;
+}
+
+/* Progress Bar */
+#progress-container {
+    width: 100%;
+    height: 10px;
+    background: #333;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+#progress-bar {
+    height: 10px;
+    width: 0%;
+    background: #ffb300;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#progress-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* AI Panel */
+#ai-panel {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+#ai-refresh {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ffb300;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Habit Input */
+#habit-input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#habit-input {
+    flex: 1;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #eee;
+}
+
+#habits {
+    margin-top: 10px;
+}
+
+.habit-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #1d1d1d;
+    margin-bottom: 8px;
+    border-left: 4px solid #ffb300;
+    border-radius: 6px;
+}
+
+.habit-item button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #f55;
+    cursor: pointer;
+}
+
+/* 21 Days Grid */
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.day-box {
+    background: #1d1d1d;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.day-box.completed {
+    background: #ffb300;
+    color: #111;
+    border-color: #ffb300;
+}
+
+/* Reflection Box */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #eee;
+}
+button#save-reflection {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ffb300;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
