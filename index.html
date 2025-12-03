@@ -8,48 +8,62 @@
 </head>
 <body>
 
-    <header>
+    <!-- HERO -->
+    <header class="hero">
+        <div class="overlay"></div>
         <h1>21-DAY TRANSFORMATION</h1>
-        <p class="subtitle">War Room • Kill the Weak Version</p>
+        <p class="subtitle">War Room • Eliminate Your Weak Version</p>
     </header>
 
-    <!-- Progress -->
-    <div id="progress-container">
-        <div id="progress-bar"></div>
-    </div>
-    <p id="progress-text">0% Done</p>
+    <!-- PROGRESS -->
+    <section class="section">
+        <h2 class="section-title">Progress</h2>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <p id="progress-text">0% Completed</p>
+    </section>
 
-    <!-- AI Coach -->
-    <section id="ai-panel">
-        <h2>Reminder</h2>
-        <p id="ai-output">Your transformation coach is waiting for discipline...</p>
+    <!-- AI COACH -->
+    <section id="ai-panel" class="section">
+        <h2 class="section-title">AI Coach Command</h2>
+        <div class="ai-box">
+            <img src="assets/coach.png" alt="Coach AI" class="coach-img">
+            <p id="ai-output">Your coach is analyzing your behavior...</p>
+        </div>
         <button id="ai-refresh" onclick="generateAISuggestion()">Update Insights</button>
     </section>
 
-    <!-- Habit Input -->
-    <section>
-        <h2>Daily Habits</h2>
+    <!-- HABITS -->
+    <section class="section">
+        <h2 class="section-title">Your Daily Habits</h2>
 
         <div id="habit-input-box">
-            <input id="habit-input" type="text" placeholder="Write a habit...">
+            <input id="habit-input" type="text" placeholder="Enter a habit (e.g., Cold Shower)">
             <button onclick="addHabit()">Add</button>
         </div>
 
-        <div id="habits"></div>
+        <div id="habits" class="habit-list"></div>
     </section>
 
-    <!-- Day Grid -->
-    <section>
-        <h2>21-Day Wall</h2>
-        <div id="days"></div>
+    <!-- 21 DAY WALL -->
+    <section class="section">
+        <h2 class="section-title">21-Day Wall</h2>
+        <p class="section-subtitle">Each day you mark is one punch thrown at your weaker self.</p>
+        <div id="days" class="day-grid"></div>
     </section>
 
-    <!-- Reflection -->
-    <section>
-        <h2>Daily Reflection</h2>
-        <textarea id="reflection" placeholder="Write your reflection for today..."></textarea>
+    <!-- REFLECTION -->
+    <section class="section">
+        <h2 class="section-title">Daily Reflection</h2>
+        <p class="section-subtitle">If you don’t reflect, you repeat.</p>
+        <textarea id="reflection" placeholder="Write what you learned today, even if it's one brutal truth..."></textarea>
         <button onclick="saveReflection()">Save Reflection</button>
     </section>
+
+    <footer>
+        <p>Rise. Break. Transform.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
